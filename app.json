@@ -1,0 +1,32 @@
+{
+  "id": "57115e57-f794-4678-81e5-ebbb7e95fad6",
+  "name": "ImportAttachments",
+  "publisher": "ivansingleton.dev",
+  "version": "1.0.0.0",
+  "brief": "A Business Central extension for importing attachments to Sales Orders",
+  "description": "This extension facilitates the import of various document types as attachments to Sales Orders in Microsoft Dynamics 365 Business Central. The extension reads JSON input to process and attach documents in Base64 format, providing a flexible solution for document management in Sales Orders.",
+  "privacyStatement": "https://ivansingleton.dev",
+  "EULA": "https://ivansingleton.dev/",
+  "help": "https://ivansingleton.dev/",
+  "url": "https://ivansingleton.dev/",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 59100,
+      "to": 59149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
