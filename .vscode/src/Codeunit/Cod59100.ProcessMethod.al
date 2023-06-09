@@ -1,20 +1,5 @@
 codeunit 59100 ProcessSalesOrderAttachment
 {
-    // Function to process incoming JSON text and forward to attachment import
-    procedure JsonRequest(jsonText: Text) Response: Text
-    var
-        JsonObject: JsonObject;
-        JToken, ParamsJToken, ProcessMethodJToken : JsonToken;
-        ProcessMethod: text;
-    begin
-        // Validate that JSON input is not empty
-        if (jsonText = '') then
-            Error('Json is empty!');
-
-        // Call function to import attachments to Sales Orders and return its response
-        exit(ImportAttachmentsToSalesOrders(jsonText));
-    end;
-
     procedure SendPing(): Text
     begin
         exit('Pong');
@@ -22,7 +7,7 @@ codeunit 59100 ProcessSalesOrderAttachment
 
     // Function to import attachments to Sales Orders. It reads input parameters,
     // retrieves the appropriate Sales Order, and returns the status of document processing.
-    local procedure ImportAttachmentsToSalesOrders(JsonObjectText: Text): Text
+    procedure ImportAttachmentsToSalesOrders(JsonObjectText: Text): Text
     var
         SalesOrder: Record "Sales Header";
         FromRecRef: RecordRef;
@@ -70,9 +55,9 @@ codeunit 59100 ProcessSalesOrderAttachment
         Processed := ConvertAndSaveBase64String(FromRecRef, Base64String, FileName, FileExtension);
 
         if Processed then
-            exit('Document imported successfully.')
+            exit(StrSubstNo('Document was %1.%2 imported successfully.', FileName, FileExtension))
         else
-            exit('An error occurred while importing the document.')
+            exit(StrSubstNo('An error occurred while importing the Document %1.%2', FileName, FileExtension));
     end;
 
     // Function to process the Base64 string of the document and save it as an Instream.
