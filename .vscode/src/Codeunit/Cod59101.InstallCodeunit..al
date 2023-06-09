@@ -23,7 +23,7 @@ codeunit 59101 InstallCodeunit
 
         // Attempt to insert the new record
         // If the insertion fails, an error will be raised by default
-        TenantWebService.Insert();
+        if TenantWebService.Insert() then;
     end;
 
 }
