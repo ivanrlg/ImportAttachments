@@ -11,4 +11,10 @@
     <li>Demonstrative Postman requests.</li>
 </ul>
 
-<p>Whether you're a Business Central developer seeking to enhance the platform's functionality or a BC user looking to optimize your Sales Order operations, this repository provides valuable resources. Explore the code, use it as a learning material, or adapt it to your own needs.</p>
+<p>Explore the code, use it as a learning material, or adapt it to your own needs.</p>
+
+<h2>Video Demo</h2>
+
+
+https://github.com/ivanrlg/ImportAttachments/assets/21310111/da94c56b-5704-4abc-b0b4-367e47559f42
+
