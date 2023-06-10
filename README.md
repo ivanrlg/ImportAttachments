@@ -14,7 +14,7 @@
 
 <h2>Video Demo</h2>
 
-https://github.com/ivanrlg/ImportAttachments/assets/21310111/da94c56b-5704-4abc-b0b4-367e47559f42
+https://github.com/ivanrlg/ImportAttachments/assets/21310111/5c79c9e3-6979-4275-91ed-f1e14453f450
 
 <h2>For more information: </h2>
 https://ivansingleton.dev/importing-attachments-to-sales-orders-in-business-central-using-web-services
