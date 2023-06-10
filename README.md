@@ -7,7 +7,6 @@
     <li>Codeunit to process Sales Order attachments in Business Central.</li>
     <li>Setup and Upgrade codeunits to manage web services.</li>
     <li>Web service implementation to import attachments to Sales Orders.</li>
-    <li>Detailed code comments for better understanding.</li>
     <li>Demonstrative Postman requests.</li>
 </ul>
 
@@ -15,8 +14,7 @@
 
 <h2>Video Demo</h2>
 
-
 https://github.com/ivanrlg/ImportAttachments/assets/21310111/da94c56b-5704-4abc-b0b4-367e47559f42
 
-
-
+<h2>For more information: </h2>
+https://ivansingleton.dev/importing-attachments-to-sales-orders-in-business-central-using-web-services
